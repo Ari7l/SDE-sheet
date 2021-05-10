@@ -10,8 +10,8 @@ long long merge(long long arr[],long long temp[], long long left,long long mid,l
         }
         else{
             temp[k++]=arr[j++];
-            inv_cnt += mid-i; // if any element in left array is greater then as the array is sorted
-        }                     // all the element on right are also greater hence (mid - i) 
+            inv_cnt += mid-i; // if any element in left array is greater than ele in right array then as the left array is sorted
+        }                     // all the element on right of current element of left are also greater hence (mid - i) 
                               // gives total inv_cnt  e.g. 2(i) 3 4(mid-1) and 1 inv_cnt = 3 - 0
     }
     while(i<=mid-1){//if right index goes out of bound add remaining ele in left sorted array
