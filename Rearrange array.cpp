@@ -25,3 +25,5 @@ void rearrange(int arr[], int n){
 	}
 
 }
+TIME : O(N)
+SPACE : O(1)
