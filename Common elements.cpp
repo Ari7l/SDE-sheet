@@ -29,3 +29,5 @@ class Solution
         }
 
 };
+TIME:O(n1+n2+n3) = O(N)
+SPACE : O(n1+n2+n3)
