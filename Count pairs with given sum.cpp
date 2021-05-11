@@ -2,7 +2,7 @@ class Solution{
 public:
     int getPairsCount(int arr[], int n, int k) {
         // code here
-         unordered_map<int,int>mp; // unordered_map operation O(1) and mp operation O(logn)
+         unordered_map<int,int>mp; // unordered_map operation O(1) while map operation O(logn)
         int Pairs =0;
         for(int i=0;i<n;++i) mp[arr[i]]++; // conunting the frequency of each element
         for(int i=0;i<n;++i){
