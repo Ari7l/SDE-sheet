@@ -34,8 +34,8 @@ public:
                 if(nums[j]>val) break;
                 j--;
             }
-            swap(nums,j,index-1);
-            reverse(nums,index,n-1);
+            swap(nums,j,index-1);//swapping the element to the left of index with element just greater than that element 
+            reverse(nums,index,n-1);//then arranging the elements on the right of index in decending order
         }
     }
 }; // time complexity O(n) and space complexity O(1)
