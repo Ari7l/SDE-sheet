@@ -26,7 +26,8 @@ public:
         //when aux[i-1][j-1] common in both previous matrix then it needs to added once
     }
 };
-
+TIME: O(rows*cols)+ O(1)//for making the auxillary matrix + query
+SPACE: O(rows*cols)
 /**
  * Your NumMatrix object will be instantiated and called as such:
  * NumMatrix* obj = new NumMatrix(matrix);
