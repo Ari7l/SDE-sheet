@@ -8,10 +8,10 @@ class Solution{
        int sum =0;
        //The idea is to find the prefix  sum till ith index and check if that sum already exist or 
        // th sum is '0' if either of the condition works the array contains the subarray with sum 0
-       // This works because if the prefix sum repeats that means the elements between the till 
+       // This works because if the prefix sum repeats that means the elements the till next 
        // repeated sum must add upto zero 
        //e.g. 4 2 -3 1 6 
-       // sum 4 6  3 4  now 4 repeats it means the elements till another 4 add upto zero 2 -3 1 
+       // sum 4 6  3 4  now 4 repeats it means the elements till next 4 add upto zero 2 -3 1 
        for(int i=0;i<n;++i){
            sum+=arr[i];
            if(st.find(sum)!=st.end()||sum==0){
