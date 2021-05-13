@@ -3,9 +3,9 @@
 // is the majority element as we can assume it always exist
 // orelse we have to verify if the candidate element is actually the majority element
 // First we assume first ele as majority ele and take count=1
-//and scan the vector if find the majority (same ele) ele we can increment the count
-// or else we decrement the count, if the count hits zero at index i we assume the that to majority ele
-//initilize the count as 1 again
+//and scan the vector we if find the majority (same ele) ele then we can increment the count
+// or else we decrement the count, if the count hits zero at index i we assume the that index to be majority ele
+//and initilize the count as 1 again
 //WHY this works:
 //the occurance of majority ele is > n/2 while all the other elements combined occurance
 // is less than <n/2 e.g. 2 2 2 4 3 
