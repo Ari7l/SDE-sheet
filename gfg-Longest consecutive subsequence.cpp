@@ -30,3 +30,4 @@ class Solution{
       return res;
     }
 };
+//TIME AND SPACE : O(N)
