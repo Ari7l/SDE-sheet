@@ -20,7 +20,7 @@ void rearrange(int arr[], int n){
 	int k=0; //we are starting from first index that is +ve ele and index i is already at first -Ve ele
 	while(k<n && i<n){
 		swap(arr[k],swap[i]);
-		k +=2;// move k by 2 pos ans i by 1 pos then swap
+		k +=2;// move k by 2 pos ans i by 1 pos then swap because we need alternate +ve and -ve number
 		i +=1;
 	}
 
