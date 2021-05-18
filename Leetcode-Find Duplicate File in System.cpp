@@ -8,11 +8,12 @@ public:
                                                   //     --> "root/c/d/4.txt"
        for(auto &pstr : paths){
            int i=0;
-       //"root/a 1.txt(abcd) in the input once the path and content have a space in between 
+       //"root/a 1.txt(abcd) in the input once the path and name of the file have a space in between 
            //hence we itreate till we hit space and then store the path string
            while(pstr[i]!=' ') ++i;
            string path = pstr.substr(0,i);
            //now we will itrate the rest of the string to extract content 
+           //j will store the starting index of the name of content
            for(int j=i+1 ,k=0 ;i<pstr.size();++i){
                if(pstr[i]=='('){
                    k = i+1;
