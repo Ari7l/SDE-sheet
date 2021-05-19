@@ -11,6 +11,9 @@ stack<int>st2;
 
 class solution{
 public:
+   // we are using two stacks to create LIFO rule of queue. One stack is acting as the front and other as the rear.
+   // we are pushing all the elements in stack st1 which is tail i guess and the if Dequeue is called we are push all the elements in the stack2 
+   //hence achieving the reverse internal order of queue by stack now the top ele of st2 is front element and hence we can remove it or return it 
    void Enqueue( int n){
        st1.push(n);
    }
