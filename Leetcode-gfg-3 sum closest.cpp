@@ -23,3 +23,5 @@ class Solution{
         // code here
     }
 };
+//TIME O(N*2)
+//SPACE O(1)
