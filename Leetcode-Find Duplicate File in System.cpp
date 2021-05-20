@@ -6,6 +6,10 @@ public:
     vector<vector<string>> findDuplicate(vector<string>& paths) {
        unordered_map<string ,vector<string>>cont; //abcd --> "root/a/2.txt"
                                                   //     --> "root/c/d/4.txt"
+        
+        //Choose auto x when you want to work with copies.
+        //Choose auto &x when you want to work with original items and may modify them.
+        //Choose auto const &x when you want to work with original items and will not modify them.
        for(auto &pstr : paths){
            int i=0;
        //"root/a 1.txt(abcd) in the input once the path and name of the file have a space in between 
