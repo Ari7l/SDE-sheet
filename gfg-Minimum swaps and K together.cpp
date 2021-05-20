@@ -29,3 +29,4 @@ int minSwap(int *arr, int n, int k) {
     
         
     }
+//time O(N) ans space O(1)
