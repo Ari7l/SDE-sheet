@@ -37,7 +37,7 @@ bool shuffle( char *pat, char *text){
     return false;
     
 }
-
+//TIME:O(N)
 
 int main() {
     char text[] = "BACDGABCDA";
