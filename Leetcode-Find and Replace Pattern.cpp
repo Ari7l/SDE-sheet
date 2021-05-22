@@ -32,5 +32,5 @@ public:
     }
 };
 //Time Complexity: O(N * M) where N is the length of words and M is the length of each word/pattern
-//Space Complexity: O(M) for the codex
-//or O(N + M) if you count the space of the output (res)
+//Space Complexity: O(N*M) 
+
