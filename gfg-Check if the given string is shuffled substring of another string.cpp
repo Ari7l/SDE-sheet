@@ -26,7 +26,7 @@ bool shuffle( char *pat, char *text){
     for(int i=M ;i<N ;++i){
         //check if the first window contain same number of occurance of charac.
         if(compare(countP,countTW));
-        //this stores the count for next window
+        //this stores the count for next window i.e sliding the window to right by 1
         countTW[text[i]]++;
         //this decrement the count of previous window
         countTW[text[i-M]]--;
