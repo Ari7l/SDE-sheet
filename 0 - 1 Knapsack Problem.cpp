@@ -89,7 +89,7 @@ class Solution
     }
 };
 
-//2nd approach
+//3rd approach
 //Expected Time Complexity: O(N*W)
 //Expected Auxiliary Space: O(W)
 //using 1D array dp[W]
