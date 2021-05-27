@@ -35,4 +35,25 @@ int Solution::solve(string A) {
     return dp[0][n-1];
     
 }
-//
+//Top Down recursive with memoization
+class Solution {
+public:
+    int helper(string s , vector<vector<int>>&dp,int i ,int j){
+       if(dp[i][j]!=0) return dp[i][j];
+       if (i > j)      return 0;
+       if (i == j)     return 1;
+       if(s[i]==s[j]){
+           dp[i][j] = 2 + helper(s,dp,i+1,j-1);
+       }
+        else{
+            dp[i][j] = max(helper(s,dp,i+1,j),helper(s,dp,i,j-1));
+        }
+       return dp[i][j];
+    }
+    int longestPalindromeSubseq(string s) {
+         int n = s.size();
+     vector<vector<int>>dp(n,vector<int>(n,0));
+     return helper(s,dp,0,n-1);
+    }
+
+};
