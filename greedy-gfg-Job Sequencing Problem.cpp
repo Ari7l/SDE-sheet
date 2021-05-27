@@ -24,7 +24,7 @@ class Solution
         for(int i=0 ;i<n;++i){
             maxDeadline = max(maxDeadline,arr[i].dead);
         }
-        //maxDeadline is used to determine themax deadline for any job among all
+        //maxDeadline is used to determine the max deadline for any job among all
         //becoz all the jobs can only done till the maximum deadline
         //each job takes 1 unit of time ..bigger deadline means that job can 
         //completed later but within its deadline 
@@ -35,8 +35,8 @@ class Solution
         //now iterate through each job
         for(int i = 0 ;i<n;++i){
             for(int t = arr[i].dead ;t>0 ;t--){
-                //we want to assign a job as close as possible to its deadline
-                //that way we can take more profiting jobs 
+                //if we assign the greatest possible time slot since if we assign a time slot even lesser than
+                //the available one than there might be some other job(which can maximize profit) which will miss its deadline. 
                 //if that timeslot is not free move to next closet possiblw slot
                 if(timeslot[t]==false){
                     timeslot[t]=true;
