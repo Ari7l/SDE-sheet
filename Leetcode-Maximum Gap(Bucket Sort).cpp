@@ -37,3 +37,9 @@ public:
         return ans;
     }
 };
+//Time Complexity: O(N) where N is the length of nums
+//finding hi and lo in nums: O(N)
+//fill buckets: O(N)
+//finding all bucket hi's and lo's: O(N)
+//comparing all bucket gaps: O(N) for up to 2 * N buckets
+//Space Complexity: O(N) for N numbers spread among at most 2 * N buckets
