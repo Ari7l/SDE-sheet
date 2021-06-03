@@ -30,3 +30,5 @@ public:
         return count;
     }
 };
+//Time: O(N*2)
+//space:O(1)
