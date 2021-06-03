@@ -6,6 +6,7 @@ int findUpper(vector<int>&v, int target){
     int low = 0 , high = v.size()-1;
     while(low<=high){
         int mid = low + (high-low)/2 ;
+        //if we find last but one or any other occurance we will check if there is any other occur to the right
         if(v[mid]<=target){
             low = mid+1;
         }
@@ -27,6 +28,7 @@ int findLower(vector<int>&v, int target){
     int low = 0 , high = v.size()-1;
     while(low<=high){
         int mid = low + (high-low)/2 ;
+        //if we find any occurance then we will check if there is any other occur to the left
         if(v[mid]>=target){
             high = mid-1;
         }
@@ -53,7 +55,7 @@ int betweenEle(vector<int>&v ,int n ,int m){
 
 
 
-
+//TIME : O(logn)
 int main() {
     vector<int>v{3, 3, 3, 4, 5, 6, 7, 8, 8, 8};
     int m,n;
