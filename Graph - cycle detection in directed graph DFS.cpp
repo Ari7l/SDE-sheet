@@ -18,8 +18,8 @@ bool cycleDfs(int src, vector<int> adj[], int vis[],int dfsVis[]) {
 bool cycleDetect(vector<int> adj[], int n) {
     int vis[n];
     int dfsVis[n];
-    memset(vis, 0, sizeof color); 
-    memset(vis, 0, sizeof color); 
+    memset(vis, 0, sizeof vis); 
+    memset(vis, 0, sizeof dfsVis); 
     for(int i = 0;i<n;i++) {
         if(vis[i]==0){
             if(cycleDfs(i, adj, vis,dfsVis)){
