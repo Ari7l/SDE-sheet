@@ -60,7 +60,6 @@ int main() {
         for (int i = 0; i < E; i++) {
             cin >> u >> v;
             adj[u].push_back(v);
-            adj[v].push_back(u);
         }
         
         Solution obj;
