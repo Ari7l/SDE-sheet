@@ -6,7 +6,7 @@ bool cycleDfs(int src, vector<int> adj[], int vis[],int dfsVis[]) {
     dfsVis[src]=1;
      for(auto it : adj[src]) {
         if(vis[it] == 0) {
-            if(bipartiteDfs(it, adj, vis,dfsVis)) return true;
+            if(cycleDfs(it, adj, vis,dfsVis)) return true;
             }
          else if(dfsVis[it]==1) return true;
         
