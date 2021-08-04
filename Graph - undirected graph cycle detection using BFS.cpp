@@ -16,6 +16,7 @@ class Solution{
          q.push({node ,-1});
          while(!q.empty()){
              auto curr = q.front();
+            q.pop();
              for(auto it : adj[node]){
                  if(!vis[it]){
                      q.push({it,node});
